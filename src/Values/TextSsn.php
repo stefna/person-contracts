@@ -11,18 +11,14 @@ namespace Stefna\PersonContract\Values;
  */
 class TextSsn implements Ssn, \JsonSerializable
 {
-	/** @var string */
-	private $ssn;
-
 	public static function fromString(string $ssn): self
 	{
 		return new self($ssn);
 	}
 
-	private function __construct(string $ssn)
-	{
-		$this->ssn = $ssn;
-	}
+	private function __construct(
+		private string $ssn,
+	) {}
 
 	public function toString(): string
 	{

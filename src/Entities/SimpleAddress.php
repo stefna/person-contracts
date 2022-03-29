@@ -4,19 +4,11 @@ namespace Stefna\PersonContract\Entities;
 
 final class SimpleAddress implements Address
 {
-	/** @var string */
-	private $zipCode;
-	/** @var string */
-	private $city;
-	/** @var string */
-	private $address;
-
-	public function __construct(string $city, string $zipCode, string $address)
-	{
-		$this->city = $city;
-		$this->zipCode = $zipCode;
-		$this->address = $address;
-	}
+	public function __construct(
+		private string $city,
+		private string $zipCode,
+		private string $address
+	) {}
 
 	public function getZipCode(): string
 	{

@@ -11,9 +11,6 @@ final class Kennitala implements Ssn, \JsonSerializable
 	private const KENNITALA_TOO_SHORT = 'Invalid kennitala. Provided ssn is to short. Expected 10 chars';
 	private const KENNITALA_TOO_LONG = 'Invalid kennitala. Provided ssn is to long. Expected 10 chars';
 
-	/** @var string */
-	private $ssn;
-
 	private static function validateChecksum(string $value): bool
 	{
 		$sum = (int)$value[0] * 3;
@@ -62,10 +59,9 @@ final class Kennitala implements Ssn, \JsonSerializable
 		return new self($ssn);
 	}
 
-	private function __construct(string $ssn)
-	{
-		$this->ssn = $ssn;
-	}
+	private function __construct(
+		private string $ssn,
+	) {}
 
 	public function toString(): string
 	{
