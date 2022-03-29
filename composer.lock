@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "7e2f835c97b105d17fbbf8412a2e3832",
+    "content-hash": "ba4ac00fb9618559fd6357bc11dc13b2",
     "packages": [
         {
             "name": "sunkan/enum",
@@ -125,16 +125,16 @@
         },
         {
             "name": "squizlabs/php_codesniffer",
-            "version": "3.6.1",
+            "version": "3.6.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/squizlabs/PHP_CodeSniffer.git",
-                "reference": "f268ca40d54617c6e06757f83f699775c9b3ff2e"
+                "reference": "5e4e71592f69da17871dba6e80dd51bce74a351a"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/f268ca40d54617c6e06757f83f699775c9b3ff2e",
-                "reference": "f268ca40d54617c6e06757f83f699775c9b3ff2e",
+                "url": "https://api.github.com/repos/squizlabs/PHP_CodeSniffer/zipball/5e4e71592f69da17871dba6e80dd51bce74a351a",
+                "reference": "5e4e71592f69da17871dba6e80dd51bce74a351a",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -183,20 +183,20 @@
                 "source": "https://github.com/squizlabs/PHP_CodeSniffer",
                 "wiki": "https://github.com/squizlabs/PHP_CodeSniffer/wiki"
             },
-            "time": "2021-10-11T04:00:11+00:00"
+            "time": "2021-12-12T21:44:58+00:00"
         },
         {
             "name": "stefna/codestyle",
-            "version": "1.11.1",
+            "version": "1.12.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/stefna/codestyle.git",
-                "reference": "1e7f158fcb70c6ff976e1e74d52c3dd63c2b6b99"
+                "reference": "e1c9afdbe5806e6cfab09b980667b889af45ff7f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/stefna/codestyle/zipball/1e7f158fcb70c6ff976e1e74d52c3dd63c2b6b99",
-                "reference": "1e7f158fcb70c6ff976e1e74d52c3dd63c2b6b99",
+                "url": "https://api.github.com/repos/stefna/codestyle/zipball/e1c9afdbe5806e6cfab09b980667b889af45ff7f",
+                "reference": "e1c9afdbe5806e6cfab09b980667b889af45ff7f",
                 "shasum": "",
                 "mirrors": [
                     {
@@ -219,6 +219,9 @@
                 }
             },
             "notification-url": "https://repo.packagist.com/stefnadev/downloads/",
+            "license": [
+                "MIT"
+            ],
             "authors": [
                 {
                     "name": "Andreas",
@@ -228,9 +231,9 @@
             "description": "Custom php sniffer for stefna",
             "support": {
                 "issues": "https://github.com/stefna/codestyle/issues",
-                "source": "https://github.com/stefna/codestyle/tree/1.11.1"
+                "source": "https://github.com/stefna/codestyle/tree/1.12.0"
             },
-            "time": "2021-05-04T14:22:43+00:00"
+            "time": "2022-02-04T14:57:54+00:00"
         }
     ],
     "aliases": [],
@@ -239,9 +242,9 @@
     "prefer-stable": true,
     "prefer-lowest": false,
     "platform": {
-        "php": "^7.1 || ^8.0",
+        "php": "^8.0",
         "ext-json": "*"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.2.0"
 }
