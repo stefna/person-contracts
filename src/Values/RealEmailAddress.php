@@ -4,7 +4,7 @@ namespace Stefna\PersonContract\Values;
 
 use Stefna\PersonContract\Exceptions\InvalidEmail;
 
-final class RealEmailAddress implements EmailAddress
+final readonly class RealEmailAddress implements EmailAddress
 {
 	public static function fromString(string $email): self
 	{

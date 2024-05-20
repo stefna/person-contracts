@@ -9,7 +9,7 @@ namespace Stefna\PersonContract\Values;
  * otherwise please create a more specific class that includes validation
  * logic for that ssn
  */
-class TextSsn implements Ssn, \JsonSerializable
+final readonly class TextSsn implements Ssn, \JsonSerializable
 {
 	public static function fromString(string $ssn): self
 	{
@@ -25,7 +25,7 @@ class TextSsn implements Ssn, \JsonSerializable
 		return $this->ssn;
 	}
 
-	public function jsonSerialize()
+	public function jsonSerialize(): string
 	{
 		return $this->ssn;
 	}

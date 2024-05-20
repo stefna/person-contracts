@@ -4,7 +4,7 @@ namespace Stefna\PersonContract\Values;
 
 use Stefna\PersonContract\Exceptions\InvalidSsn;
 
-final class Kennitala implements Ssn, \JsonSerializable
+final readonly class Kennitala implements Ssn, \JsonSerializable
 {
 	private const KENNITALA_INVALID = 'Invalid kennitala';
 	private const KENNITALA_NOT_NUMERIC = 'Invalid kennitala. Provided ssn is not numeric';
@@ -68,7 +68,7 @@ final class Kennitala implements Ssn, \JsonSerializable
 		return $this->ssn;
 	}
 
-	public function jsonSerialize()
+	public function jsonSerialize(): string
 	{
 		return $this->ssn;
 	}

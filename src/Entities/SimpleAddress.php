@@ -2,7 +2,7 @@
 
 namespace Stefna\PersonContract\Entities;
 
-final class SimpleAddress implements Address
+final readonly class SimpleAddress implements Address
 {
 	public function __construct(
 		private string $city,
