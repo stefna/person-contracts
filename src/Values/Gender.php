@@ -6,4 +6,9 @@ enum Gender: string
 {
 	case Man = '1';
 	case Woman = '2';
+
+	public function toString(): string
+	{
+		return $this->value;
+	}
 }
