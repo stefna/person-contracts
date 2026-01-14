@@ -17,11 +17,17 @@
 	},
 	"require-dev": {
 		"stefna/codestyle": "^1.5",
-		"phpstan/phpstan": "^1.0"
+		"phpstan/phpstan": "^2.0",
+		"phpunit/phpunit": "^11.0"
 	},
 	"autoload": {
 		"psr-4": {
 			"Stefna\\PersonContract\\": "src/"
+		}
+	},
+	"autoload-dev": {
+		"psr-4": {
+			"Stefna\\PersonContract\\Tests\\": "tests/"
 		}
 	},
 	"config": {
