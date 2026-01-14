@@ -48,4 +48,27 @@ final readonly class Kennitala implements Ssn, \JsonSerializable
 	{
 		return $this->ssn;
 	}
+
+	public function isCompany(): bool
+	{
+		$firstDigit = (int)($this->ssn[0] ?? -1);
+		return in_array($firstDigit, [4, 5, 6, 7], true);
+	}
+
+	/**
+	 * Person staying in country for 3-6 months
+	 *
+	 * @link https://www.skra.is/folk/eg-i-thjodskra/um-kennitolur/um-kerfiskennitolur/
+	 */
+	public function isTemporary(): bool
+	{
+		$firstDigit = (int)($this->ssn[0] ?? -1);
+		return in_array($firstDigit, [8, 9], true);
+	}
+
+	public function isPerson(): bool
+	{
+		$firstDigit = (int)($this->ssn[0] ?? -1);
+		return in_array($firstDigit, [0, 1, 2, 3, 8, 9], true);
+	}
 }
